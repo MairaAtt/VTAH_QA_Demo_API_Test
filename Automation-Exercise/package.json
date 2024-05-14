@@ -1,0 +1,21 @@
+{
+    "name": "automation-exercise-vtah",
+    "version": "1.0.0",
+    "description": "Demo API test project with Bruno",
+    "main": "index.js",
+    "scripts": {
+        "test:vtah": "bru run --env vtah --output results/results.xml --format junit"
+    },
+    "keywords": [
+        "bruno",
+        "api",
+        "test"
+    ],
+    "author": "VTAH",
+    "license": "ISC",
+    "dependencies": {
+        "@usebruno/cli": "^1.1.1",
+        "allure-commandline": "^2.26.0",
+        "axios": "^1.6.7"
+    }
+}

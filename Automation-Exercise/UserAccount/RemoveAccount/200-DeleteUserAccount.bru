@@ -1,0 +1,26 @@
+meta {
+  name: 200-DeleteUserAccount
+  type: http
+  seq: 1
+}
+
+delete {
+  url: {{baseUrl}}/deleteAccount
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  email: toto-vtah@test.com
+  password: toto_vtah
+}
+
+tests {
+  test("should succeed", function() {
+    expect(res.getBody().responseCode).to.equal(201);
+  });
+  
+  test("should diplay an succes message", function() {
+    const data = res.getBody();
+    expect(data.message).to.equal("Account removed!"); });
+}

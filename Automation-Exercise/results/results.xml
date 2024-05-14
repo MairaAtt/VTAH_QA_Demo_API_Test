@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Product\200-GetAllProduct" errors="0" failures="0" skipped="0" tests="3" timestamp="2024-05-14T21:42:35.985" hostname="WTFRLVSE265374L" time="0.954">
+    <testcase name="should succeed" status="pass" classname="https://automationexercise.com/api/productsList" time="0.318"/>
+    <testcase name="should receive list of product obj" status="pass" classname="https://automationexercise.com/api/productsList" time="0.318"/>
+    <testcase name="should response data be valid" status="pass" classname="https://automationexercise.com/api/productsList" time="0.318"/>
+  </testsuite>
+  <testsuite name="SearchProduct\200-PostSearchPRoductWithParameter" errors="0" failures="0" skipped="0" tests="3" timestamp="2024-05-14T21:42:35.996" hostname="WTFRLVSE265374L" time="0.919">
+    <testcase name="should succeed" status="pass" classname="https://automationexercise.com/api/searchProduct" time="0.306"/>
+    <testcase name="should receive search product result obj" status="pass" classname="https://automationexercise.com/api/searchProduct" time="0.306"/>
+    <testcase name="should response data be valid" status="pass" classname="https://automationexercise.com/api/searchProduct" time="0.306"/>
+  </testsuite>
+  <testsuite name="SearchProduct\400-PostSearchPRoductWithoutParameter" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.996" hostname="WTFRLVSE265374L" time="0.779">
+    <testcase name="should fail" status="pass" classname="https://automationexercise.com/api/searchProduct" time="0.390"/>
+    <testcase name="should diplay an error" status="pass" classname="https://automationexercise.com/api/searchProduct" time="0.390"/>
+  </testsuite>
+  <testsuite name="UserAccount\CreateAccount\200-createUser" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.997" hostname="WTFRLVSE265374L" time="1.560">
+    <testcase name="should succeed" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.780"/>
+    <testcase name="should diplay an succes message" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.780"/>
+  </testsuite>
+  <testsuite name="UserAccount\CreateAccount\400-createUserMissingParameter" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.997" hostname="WTFRLVSE265374L" time="0.810">
+    <testcase name="should fail" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.405"/>
+    <testcase name="should diplay missing parameter error message" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.405"/>
+  </testsuite>
+  <testsuite name="UserAccount\CreateAccount\400-createUserExistingEmail" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.997" hostname="WTFRLVSE265374L" time="0.823">
+    <testcase name="should fail" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.412"/>
+    <testcase name="should diplay missing parameter error message" status="pass" classname="https://automationexercise.com/api/createAccount" time="0.412"/>
+  </testsuite>
+  <testsuite name="UserAccount\Login\200-PostVerifyLogin" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.998" hostname="WTFRLVSE265374L" time="0.806">
+    <testcase name="should succeed" status="pass" classname="https://automationexercise.com/api/verifyLogin" time="0.403"/>
+    <testcase name="should diplay an succes message" status="pass" classname="https://automationexercise.com/api/verifyLogin" time="0.403"/>
+  </testsuite>
+  <testsuite name="UserAccount\Login\404-PostVerifyLoginNotFound" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.998" hostname="WTFRLVSE265374L" time="0.781">
+    <testcase name="should fail" status="pass" classname="https://automationexercise.com/api/verifyLogin" time="0.390"/>
+    <testcase name="should diplay missing parameter error message" status="pass" classname="https://automationexercise.com/api/verifyLogin" time="0.390"/>
+  </testsuite>
+  <testsuite name="UserAccount\RemoveAccount\200-DeleteUserAccount" errors="0" failures="2" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.998" hostname="WTFRLVSE265374L" time="0.884">
+    <testcase name="should succeed" status="fail" classname="https://automationexercise.com/api/deleteAccount" time="0.442">
+      <failure type="failure" message="expected 200 to equal 201"/>
+    </testcase>
+    <testcase name="should diplay an succes message" status="fail" classname="https://automationexercise.com/api/deleteAccount" time="0.442">
+      <failure type="failure" message="expected 'Account deleted!' to equal 'Account removed!'"/>
+    </testcase>
+  </testsuite>
+  <testsuite name="UserAccount\RemoveAccount\404-DeleteUserAccountNotFound" errors="0" failures="0" skipped="0" tests="2" timestamp="2024-05-14T21:42:35.999" hostname="WTFRLVSE265374L" time="0.408">
+    <testcase name="should fail" status="pass" classname="https://automationexercise.com/api/deleteAccount" time="0.204"/>
+    <testcase name="should diplay an error message" status="pass" classname="https://automationexercise.com/api/deleteAccount" time="0.204"/>
+  </testsuite>
+</testsuites>

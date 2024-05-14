@@ -1,0 +1,41 @@
+meta {
+  name: 400-createUserExistingEmail
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/createAccount
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  title: Mr
+  birth_date: 09
+  birth_month: 09
+  birth_year: 1947
+  firstname: toto
+  lastname: vtah
+  company: Viseo
+  address1: 4 avenue Doyen Louis Weil
+  address2: Cedex 1
+  country: France
+  zipcode: 38000
+  state: Rhône-Alpes
+  city: Grenoble
+  mobile_number: 0607060706
+  name: 
+  email: 
+  password: 
+}
+
+tests {
+  test("should fail", function() {
+    expect(res.getBody().responseCode).to.equal(400);
+  });
+  
+  test("should diplay missing parameter error message", function() {
+    const data = res.getBody();
+    expect(data.message).to.equal("Email already exists!"); });
+}

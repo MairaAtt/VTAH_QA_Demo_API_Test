@@ -1,0 +1,41 @@
+meta {
+  name: 200-createUser
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/createAccount
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  name: toto-vtah
+  email: toto-vtah@test.com
+  password: toto_vtah
+  title: Mr
+  birth_date: 09
+  birth_month: 09
+  birth_year: 1947
+  firstname: toto
+  lastname: vtah
+  company: Viseo
+  address1: 4 avenue Doyen Louis Weil
+  address2: Cedex 1
+  country: France
+  zipcode: 38000
+  state: Rhône-Alpes
+  city: Grenoble
+  mobile_number: 0607060706
+}
+
+tests {
+  test("should succeed", function() {
+    expect(res.getBody().responseCode).to.equal(201);
+  });
+  
+  test("should diplay an succes message", function() {
+    const data = res.getBody();
+    expect(data.message).to.equal("User created!"); });
+}

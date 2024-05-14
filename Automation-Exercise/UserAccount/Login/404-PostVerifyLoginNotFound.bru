@@ -1,0 +1,72 @@
+meta {
+  name: 404-PostVerifyLoginNotFound
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseUrl}}/verifyLogin
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  email: toto-vtah@test.com
+  password: wrongPassword
+}
+
+vars:pre-request {
+  ~: 
+}
+
+script:pre-request {
+  const expectedProduct =
+        [{
+        "id": 6,
+        "name": "Summer White Top",
+        "price": "Rs. 400",
+        "brand": "H&M",
+        "category": {
+          "usertype": {
+            "usertype": "Women"
+          },
+          "category": "Tops"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Sleeves Printed Top - White",
+        "price": "Rs. 499",
+        "brand": "Babyhug",
+        "category": {
+          "usertype": {
+            "usertype": "Kids"
+          },
+          "category": "Tops & Shirts"
+        }
+      },
+      {
+        "id": 15,
+        "name": "Printed Off Shoulder Top - White",
+        "price": "Rs. 315",
+        "brand": "Babyhug",
+        "category": {
+          "usertype": {
+            "usertype": "Kids"
+          },
+          "category": "Tops & Shirts"
+        }
+      }];  
+  
+  bru.setVar("expectedProduct", expectedProduct);
+}
+
+tests {
+  test("should fail", function() {
+    expect(res.getBody().responseCode).to.equal(404);
+  });
+  
+  test("should diplay missing parameter error message", function() {
+    const data = res.getBody();
+    expect(data.message).to.equal("User not found!"); });
+}

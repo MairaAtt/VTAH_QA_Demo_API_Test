@@ -1,0 +1,1197 @@
+{
+  "summary": {
+    "totalRequests": 10,
+    "passedRequests": 10,
+    "failedRequests": 0,
+    "totalAssertions": 0,
+    "passedAssertions": 0,
+    "failedAssertions": 0,
+    "totalTests": 22,
+    "passedTests": 20,
+    "failedTests": 2
+  },
+  "results": [
+    {
+      "test": {
+        "filename": "Product\\200-GetAllProduct.bru"
+      },
+      "request": {
+        "method": "GET",
+        "url": "https://automationexercise.com/api/productsList",
+        "headers": {}
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:55 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, PUT, POST, GET, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ngMiEJ%2BuDXpwXsOfQi1hS8exwjRqWneagQY%2BHua%2BEbyR6%2FlW0%2B%2FkbYnA10cD%2FnK5mvLx81YaQM35FPPotvk5VGQrRgGrB3KmIvX334OqWMR9AswWdG9c8pZvOOhSzr%2FS1IXw0GWZvV5D\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df99508bb94cc-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 200,
+          "products": [
+            {
+              "id": 1,
+              "name": "Blue Top",
+              "price": "Rs. 500",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 2,
+              "name": "Men Tshirt",
+              "price": "Rs. 400",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            },
+            {
+              "id": 3,
+              "name": "Sleeveless Dress",
+              "price": "Rs. 1000",
+              "brand": "Madame",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 4,
+              "name": "Stylish Dress",
+              "price": "Rs. 1500",
+              "brand": "Madame",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 5,
+              "name": "Winter Top",
+              "price": "Rs. 600",
+              "brand": "Mast & Harbour",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 6,
+              "name": "Summer White Top",
+              "price": "Rs. 400",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 7,
+              "name": "Madame Top For Women",
+              "price": "Rs. 1000",
+              "brand": "Madame",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 8,
+              "name": "Fancy Green Top",
+              "price": "Rs. 700",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 11,
+              "name": "Sleeves Printed Top - White",
+              "price": "Rs. 499",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 12,
+              "name": "Half Sleeves Top Schiffli Detailing - Pink",
+              "price": "Rs. 359",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 13,
+              "name": "Frozen Tops For Kids",
+              "price": "Rs. 278",
+              "brand": "Allen Solly Junior",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 14,
+              "name": "Full Sleeves Top Cherry - Pink",
+              "price": "Rs. 679",
+              "brand": "Kookie Kids",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 15,
+              "name": "Printed Off Shoulder Top - White",
+              "price": "Rs. 315",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 16,
+              "name": "Sleeves Top and Short - Blue & Pink",
+              "price": "Rs. 478",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 18,
+              "name": "Little Girls Mr. Panda Shirt",
+              "price": "Rs. 1200",
+              "brand": "Kookie Kids",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 19,
+              "name": "Sleeveless Unicorn Patch Gown - Pink",
+              "price": "Rs. 1050",
+              "brand": "Allen Solly Junior",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 20,
+              "name": "Cotton Mull Embroidered Dress",
+              "price": "Rs. 1190",
+              "brand": "Kookie Kids",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 21,
+              "name": "Blue Cotton Indie Mickey Dress",
+              "price": "Rs. 1530",
+              "brand": "Biba",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 22,
+              "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink",
+              "price": "Rs. 1600",
+              "brand": "Biba",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 23,
+              "name": "Sleeveless Unicorn Print Fit & Flare Net Dress - Multi",
+              "price": "Rs. 1100",
+              "brand": "Biba",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 24,
+              "name": "Colour Blocked Shirt – Sky Blue",
+              "price": "Rs. 849",
+              "brand": "Allen Solly Junior",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 28,
+              "name": "Pure Cotton V-Neck T-Shirt",
+              "price": "Rs. 1299",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            },
+            {
+              "id": 29,
+              "name": "Green Side Placket Detail T-Shirt",
+              "price": "Rs. 1000",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            },
+            {
+              "id": 30,
+              "name": "Premium Polo T-Shirts",
+              "price": "Rs. 1500",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            },
+            {
+              "id": 31,
+              "name": "Pure Cotton Neon Green Tshirt",
+              "price": "Rs. 850",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            },
+            {
+              "id": 33,
+              "name": "Soft Stretch Jeans",
+              "price": "Rs. 799",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Jeans"
+              }
+            },
+            {
+              "id": 35,
+              "name": "Regular Fit Straight Jeans",
+              "price": "Rs. 1200",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Jeans"
+              }
+            },
+            {
+              "id": 37,
+              "name": "Grunt Blue Slim Fit Jeans",
+              "price": "Rs. 1400",
+              "brand": "Polo",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Jeans"
+              }
+            },
+            {
+              "id": 38,
+              "name": "Rose Pink Embroidered Maxi Dress",
+              "price": "Rs. 2300",
+              "brand": "Madame",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Dress"
+              }
+            },
+            {
+              "id": 39,
+              "name": "Cotton Silk Hand Block Print Saree",
+              "price": "Rs. 3000",
+              "brand": "Biba",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Saree"
+              }
+            },
+            {
+              "id": 40,
+              "name": "Rust Red Linen Saree",
+              "price": "Rs. 3500",
+              "brand": "Biba",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Saree"
+              }
+            },
+            {
+              "id": 41,
+              "name": "Beautiful Peacock Blue Cotton Linen Saree",
+              "price": "Rs. 5000",
+              "brand": "Madame",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Saree"
+              }
+            },
+            {
+              "id": 42,
+              "name": "Lace Top For Women",
+              "price": "Rs. 1400",
+              "brand": "Mast & Harbour",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 43,
+              "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE",
+              "price": "Rs. 1389",
+              "brand": "Mast & Harbour",
+              "category": {
+                "usertype": {
+                  "usertype": "Men"
+                },
+                "category": "Tshirts"
+              }
+            }
+          ]
+        },
+        "responseTime": 899
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should succeed",
+          "status": "pass",
+          "uid": "i1yqqdGhmt4mJh5QlHN70"
+        },
+        {
+          "description": "should receive list of product obj",
+          "status": "pass",
+          "uid": "bVNDSBAyaMXWbZkhAIKZz"
+        },
+        {
+          "description": "should response data be valid",
+          "status": "pass",
+          "uid": "jFiduOQUt0u1AickCKTT7"
+        }
+      ],
+      "runtime": 0.963539,
+      "suitename": "Product\\200-GetAllProduct"
+    },
+    {
+      "test": {
+        "filename": "SearchProduct\\200-PostSearchPRoductWithParameter.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/searchProduct",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------811463776930684774250077"
+        },
+        "data": {
+          "_overheadLength": 113,
+          "_valueLength": 5,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------811463776930684774250077",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:55 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, PUT, POST, GET, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=JjSWM%2Bbm4m0ACJG2DfloY%2Fi%2F2bn%2BwrKkYx%2BtwyPkSR8mmYWIg2pP9m%2FX80Cq9rSHPIIK7hzmPbz9y2lj5pCz1dat8fiAakfgaPmk7n1atMvzq5qi8g9Xbx5NhKrrNPWopYLguDE8JQBG\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df99a5bf963ff-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 200,
+          "products": [
+            {
+              "id": 6,
+              "name": "Summer White Top",
+              "price": "Rs. 400",
+              "brand": "H&M",
+              "category": {
+                "usertype": {
+                  "usertype": "Women"
+                },
+                "category": "Tops"
+              }
+            },
+            {
+              "id": 11,
+              "name": "Sleeves Printed Top - White",
+              "price": "Rs. 499",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            },
+            {
+              "id": 15,
+              "name": "Printed Off Shoulder Top - White",
+              "price": "Rs. 315",
+              "brand": "Babyhug",
+              "category": {
+                "usertype": {
+                  "usertype": "Kids"
+                },
+                "category": "Tops & Shirts"
+              }
+            }
+          ]
+        },
+        "responseTime": 826
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should succeed",
+          "status": "pass",
+          "uid": "YAWG3l-JMRPNSchufNEmc"
+        },
+        {
+          "description": "should receive search product result obj",
+          "status": "pass",
+          "uid": "ymqGReKeUgqxu831CIiUw"
+        },
+        {
+          "description": "should response data be valid",
+          "status": "pass",
+          "uid": "dg1YnTHBHV-mgicfFGUWH"
+        }
+      ],
+      "runtime": 0.8690063,
+      "suitename": "SearchProduct\\200-PostSearchPRoductWithParameter"
+    },
+    {
+      "test": {
+        "filename": "SearchProduct\\400-PostSearchPRoductWithoutParameter.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/searchProduct",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------880170375194765746258792"
+        },
+        "data": {
+          "_overheadLength": 0,
+          "_valueLength": 0,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------880170375194765746258792",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:56 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, PUT, POST, GET, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=goiS02G0SeBnWwdPObEbni1yaHLNgjbr2uAdj1o%2FAz4bmeHcZUqYKN%2F%2BV%2BTQxA4MXqW4BNW1FjlTZSrNlgKIGEmItBwMAO1hDDsEpB3Sh9UcskPv22pCswq1u19lmeB5JX97cpU8h2s2\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df99fef916365-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 400,
+          "message": "Bad request, search_product parameter is missing in POST request."
+        },
+        "responseTime": 766
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should fail",
+          "status": "pass",
+          "uid": "0MF-P8vrJc51_C8IXVyIu"
+        },
+        {
+          "description": "should diplay an error",
+          "status": "pass",
+          "uid": "Opf5KW01JxWy1k3ZxeCg-"
+        }
+      ],
+      "runtime": 0.8250384,
+      "suitename": "SearchProduct\\400-PostSearchPRoductWithoutParameter"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\CreateAccount\\200-createUser.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/createAccount",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------706598332774065760356679"
+        },
+        "data": {
+          "_overheadLength": 1812,
+          "_valueLength": 132,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------706598332774065760356679",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:57 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "POST, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=3AnA4W9bTub23cW3vLdNgOkqRL2HDeu5IyDkdWyJsfnfRMdAQEFwAlmbIfeJZtsJV3clbW%2BRlMubN%2BKGYMN3J02FU0ROu%2Bqs%2BL37b1gALKi7P7i2CLFcaxKttD2QTbKBX5cW%2FRTJIKMS\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9a4f82a23b3-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 201,
+          "message": "User created!"
+        },
+        "responseTime": 871
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should succeed",
+          "status": "pass",
+          "uid": "epNDjW__yG1pinHUvne-A"
+        },
+        {
+          "description": "should diplay an succes message",
+          "status": "pass",
+          "uid": "vnWAM1FJzNZCox9HWZnkN"
+        }
+      ],
+      "runtime": 1.6338975,
+      "suitename": "UserAccount\\CreateAccount\\200-createUser"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\CreateAccount\\400-createUserMissingParameter.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/createAccount",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------511466867757645717645097"
+        },
+        "data": {
+          "_overheadLength": 1708,
+          "_valueLength": 108,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------511466867757645717645097",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:59 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "POST, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=ZsPk7UTKae4YO6FrEzvnJuogu80Ts98RmLjg9i8e%2Fks1%2F76FENXI%2B%2BSPQiRLRVsbLQHV6VvCrYwT%2FxszsIS4uX5Jyfwc1S7gHGNfva2BD%2ByD2iokXfLAbcsAq932RIBrRFA4UzKpWuxs\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9af2bdb4182-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 400,
+          "message": "Bad request, email parameter is missing in POST request."
+        },
+        "responseTime": 769
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should fail",
+          "status": "pass",
+          "uid": "y87d7z1ih0Z9aZ1k0TwB0"
+        },
+        {
+          "description": "should diplay missing parameter error message",
+          "status": "pass",
+          "uid": "2bC3BY1f21Ahe1XX0dDN7"
+        }
+      ],
+      "runtime": 0.8064172,
+      "suitename": "UserAccount\\CreateAccount\\400-createUserMissingParameter"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\CreateAccount\\400-createUserExistingEmail.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/createAccount",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------351007153523920728114948"
+        },
+        "data": {
+          "_overheadLength": 1812,
+          "_valueLength": 96,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------351007153523920728114948",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:27:59 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "POST, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=RwwHnydtBWkObaMFVvcfl6dymf3ah5Se10b6LkcGSdQ96ck7aijQLigmNeirTaSdWsw4xF0h3vn%2FLlHQu8omhSYqXSgF%2B3pM5UG3yiUgI3yRKUuVg1pBBqQ8LT5nwOCpDWs0Eca1I2Op\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9b4496ddcdf-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 400,
+          "message": "Email already exists!"
+        },
+        "responseTime": 768
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should fail",
+          "status": "pass",
+          "uid": "0O0qmzoMoLdW4T-gO44JW"
+        },
+        {
+          "description": "should diplay missing parameter error message",
+          "status": "pass",
+          "uid": "R_kuLpVDP7pe5Q9sWuU5T"
+        }
+      ],
+      "runtime": 0.8178923,
+      "suitename": "UserAccount\\CreateAccount\\400-createUserExistingEmail"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\Login\\200-PostVerifyLogin.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/verifyLogin",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------505215243880972402637619"
+        },
+        "data": {
+          "_overheadLength": 211,
+          "_valueLength": 27,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------505215243880972402637619",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:28:00 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, PUT, POST, GET, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=EpQpR1J68WDBmAgkJ5PhC0fd3kmC4w8BTw2K3dGo0IirmcFT1CTY%2F%2BYJptcybHOA6Twkh3JDn8d6S4gmFYw8RzfLdV2DPu7qE9ConPfWeg1MeamSUT8Q00bRR1XkrMw3JJRYwe%2BjKw%2Bc\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9b94d3294b5-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 200,
+          "message": "User exists!"
+        },
+        "responseTime": 754
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should succeed",
+          "status": "pass",
+          "uid": "cV32aDWIPqFrHamFCHNJ_"
+        },
+        {
+          "description": "should diplay an succes message",
+          "status": "pass",
+          "uid": "hxFXZfrWmlpz6FJMSQPQn"
+        }
+      ],
+      "runtime": 0.7806065,
+      "suitename": "UserAccount\\Login\\200-PostVerifyLogin"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\Login\\404-PostVerifyLoginNotFound.bru"
+      },
+      "request": {
+        "method": "POST",
+        "url": "https://automationexercise.com/api/verifyLogin",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------702227907165608756879730"
+        },
+        "data": {
+          "_overheadLength": 211,
+          "_valueLength": 31,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------702227907165608756879730",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:28:01 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, PUT, POST, GET, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=BwliKVtX%2FtfPZUOw7COddooUlplMO9grnj4PS6y3fba8iyeLGZBm57Y0BThr%2FIKflvpGJJNeURGjwIr37mBMtGIUUVnMvfnd23%2FvxnVddtUgfGpiKYnDRGq6SMWWuNjEFtVKW4rnthjZ\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9be4d23369a-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 404,
+          "message": "User not found!"
+        },
+        "responseTime": 746
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should fail",
+          "status": "pass",
+          "uid": "cEbTeLhfewbl5NAdd-6tx"
+        },
+        {
+          "description": "should diplay missing parameter error message",
+          "status": "pass",
+          "uid": "xL3zAYCUXVc_5tOb9jVuh"
+        }
+      ],
+      "runtime": 0.7827574,
+      "suitename": "UserAccount\\Login\\404-PostVerifyLoginNotFound"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\RemoveAccount\\200-DeleteUserAccount.bru"
+      },
+      "request": {
+        "method": "DELETE",
+        "url": "https://automationexercise.com/api/deleteAccount",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------194583969024824286128906"
+        },
+        "data": {
+          "_overheadLength": 211,
+          "_valueLength": 27,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------194583969024824286128906",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:28:02 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=Jzf4TkajggyGWRmLXN2GoRipb%2BmZaNdfUoEcaJbSt55YMThFDMGo42Mg%2F2KkLqqNbj8sNzkjrF7bvhb5Azd7ICsmdg4RDMgoykJBJPt11Awa5Qz5zvN%2FUM5Z1NpbWvbj74aeAtLILQwl\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9c30846650f-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 200,
+          "message": "Account deleted!"
+        },
+        "responseTime": 761
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should succeed",
+          "status": "fail",
+          "error": "expected 200 to equal 201",
+          "actual": 200,
+          "expected": 201,
+          "uid": "OM2grlOQu--DYym5ZEOM8"
+        },
+        {
+          "description": "should diplay an succes message",
+          "status": "fail",
+          "error": "expected 'Account deleted!' to equal 'Account removed!'",
+          "actual": "Account deleted!",
+          "expected": "Account removed!",
+          "uid": "Z4U-6VQOP5PEX9zm__Trg"
+        }
+      ],
+      "runtime": 0.8200282,
+      "suitename": "UserAccount\\RemoveAccount\\200-DeleteUserAccount"
+    },
+    {
+      "test": {
+        "filename": "UserAccount\\RemoveAccount\\404-DeleteUserAccountNotFound.bru"
+      },
+      "request": {
+        "method": "DELETE",
+        "url": "https://automationexercise.com/api/deleteAccount",
+        "headers": {
+          "content-type": "multipart/form-data; boundary=--------------------------583735570185243199048453"
+        },
+        "data": {
+          "_overheadLength": 211,
+          "_valueLength": 35,
+          "_valuesToMeasure": [],
+          "writable": false,
+          "readable": true,
+          "dataSize": 0,
+          "maxDataSize": 2097152,
+          "pauseStreams": true,
+          "_released": true,
+          "_streams": [],
+          "_currentStream": null,
+          "_insideLoop": false,
+          "_pendingNext": false,
+          "_boundary": "--------------------------583735570185243199048453",
+          "_events": {},
+          "_eventsCount": 3
+        }
+      },
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "date": "Tue, 14 May 2024 21:28:03 GMT",
+          "content-type": "text/html; charset=utf-8",
+          "transfer-encoding": "chunked",
+          "connection": "close",
+          "vary": "Accept,Cookie,Accept-Encoding",
+          "referrer-policy": "same-origin",
+          "x-frame-options": "DENY",
+          "x-content-type-options": "nosniff",
+          "allow": "DELETE, OPTIONS",
+          "x-powered-by": "Phusion Passenger(R) 6.0.20",
+          "status": "200 OK",
+          "cf-cache-status": "DYNAMIC",
+          "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=vYkGxWbno69YM%2Fjl3mLNO%2BrGXY1wrDJhEc1e6FRCaRNsS%2Btqy9g8P%2Be5MlfRB0TCBjmjScl80u5A5POMUDZXJZb9pYtztmYJbuZELTNQtkXTg357i6AADq2VT%2B7tbeDRIrTyciAq1p2o\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+          "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+          "server": "cloudflare",
+          "cf-ray": "883df9c84daa60ee-LHR",
+          "alt-svc": "h3=\":443\"; ma=86400"
+        },
+        "data": {
+          "responseCode": 404,
+          "message": "Account not found!"
+        },
+        "responseTime": 746
+      },
+      "error": null,
+      "assertionResults": [],
+      "testResults": [
+        {
+          "description": "should fail",
+          "status": "pass",
+          "uid": "ns7CaL6_2NCrCm9Tnoexy"
+        },
+        {
+          "description": "should diplay an error message",
+          "status": "pass",
+          "uid": "0jdVFITheOpfLvag4keQh"
+        }
+      ],
+      "runtime": 0.7781124,
+      "suitename": "UserAccount\\RemoveAccount\\404-DeleteUserAccountNotFound"
+    }
+  ]
+}
